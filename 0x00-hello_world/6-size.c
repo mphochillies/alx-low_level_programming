@@ -20,4 +20,3 @@ int main(void)
 	printf("Size of float: %lu byte(s)\n", sizeof(e));
 	return (0);
 }
-
