@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * main - Prints the alphabet
- * return
+ * main - Entry point
+ * Return: 0 (Success)
  */
 
 int main(void)
