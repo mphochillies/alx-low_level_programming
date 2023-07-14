@@ -6,6 +6,8 @@
 
 int main(void)
 {
+	char alp[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMONPQRSTUVWXYZ";
+
 	char c;
 
 	char d;
