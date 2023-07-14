@@ -1,35 +1,32 @@
 #include <stdio.h>
 
 /**
- * main - prints all possible combinations
+ * main - print all possible combination
  * Return: 0 (Success)
  */
 int main(void)
 {
-	int n, m, l;
+	int 1 = 0, j;
 
-	for (n = 48; n < 58; n++)
+	for (j = i + 1; j <= 9; j++)
 	{
-		for (m = 49; m < 58; m++)
+		for (; i < j; i++)
 		{
-			for (m = 49; m < 58; l++)
+			int k;
+
+			for (k = j + 1; j <= 9; k++)
 			{
-				for (l = 50; l < 58; l++)
+				putchar(i + '0');
+				putchar(j + '0');
+				putchar(k + '0');
+				if (!(i == '7' && j == '8' && k == '9'))
 				{
-					if (l > m && m > n)
-					{
-						putchar(n);
-						putchar(m);
-						putchar(l);
-						if (n != 55 || m != 56)
-						{
-							putchar(',');
-							putchar(' ');
-						}
-					}
+					putchar(',');
+					putchar(' ');
 				}
 			}
 		}
+		i = 0;
 	}
 	putchar('\n');
 	return (0);
